@@ -1,11 +1,10 @@
 .draggable {
-    width: 200px;
-    height: 100px;
+    width: 650px;
+    height: 75px;
     text-align: center;
     background: white;
     margin-bottom: 10px;
     margin: auto;
-    width: 50%;
     text-align: center;
     margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -29,11 +28,11 @@ body {
 }
 
 .spawnzone {
-    height: 100px;
-    background: white;
+    height: 75px;
+    background: blue;
     margin-bottom: 10px;
     margin: auto;
-    width: 50%;
+    width: 650px;
     text-align: center;
     margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -41,8 +40,9 @@ body {
 
 .one {
     width: 50%;
+    font-size: 40px;
     text-align: center;
-    height: 20px;
+    height: 125px;
     background: blue;
     margin-bottom: 30px;
     padding: 10px;
@@ -54,8 +54,9 @@ body {
 .two {
     width: 50%;
     font-family: Arial, Helvetica, sans-serif;
-    height: 20px;
+    height: 125px;
     margin: auto;
+    font-size: 40px;
     margin-top: 10px;
     padding: 10px;
     text-align: center;
@@ -68,9 +69,10 @@ body {
 .three {
     width: 50%;
     font-family: Arial, Helvetica, sans-serif;
-    height: 20px;
+    height: 125px;
     margin: auto;
     padding: 10px;
+    font-size: 40px;
     text-align: center;
     background: blue;
     color: white;

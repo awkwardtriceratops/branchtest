@@ -38,6 +38,7 @@ document.addEventListener("dragleave", function(event) {
     // reset background of potential drop target when the draggable element leaves it
     if (event.target.className == "one" || event.target.className == "two" || event.target.className == "three") {
         event.target.style.background = "";
+        event.target.style.color = "white";
     }
 
 }, false);
@@ -51,6 +52,7 @@ document.addEventListener("drop", function(event) {
     newElement.setAttribute("draggable", true)
         // move dragged elem to the selected drop target
     if (event.target.className == "one" && testAnswer[curAnswer] == 0) {
+        event.target.style.color = "white";
         event.target.style.background = "";
         dragged.parentNode.removeChild(dragged);
         //event.target.appendChild( dragged );
@@ -66,6 +68,7 @@ document.addEventListener("drop", function(event) {
         }
         curAnswer += 1
     } else if (event.target.className == "two" && testAnswer[curAnswer] == 1) {
+        event.target.style.color = "white";
         event.target.style.background = "";
         dragged.parentNode.removeChild(dragged);
         //event.target.appendChild( dragged );
@@ -78,6 +81,7 @@ document.addEventListener("drop", function(event) {
         document.getElementsByClassName("answercheck")[0].innerText = "Right answer! Keep going :)"
         curAnswer += 1
     } else if (event.target.className == "three" && testAnswer[curAnswer] == 2) {
+        event.target.style.color = "white";
         event.target.style.background = "";
         dragged.parentNode.removeChild(dragged);
         //event.target.appendChild( dragged );
@@ -91,6 +95,8 @@ document.addEventListener("drop", function(event) {
     } else {
         document.getElementsByClassName("answercheck")[0].style.background = "red"
         event.target.style.background = "";
+        event.target.style.color = "white";
+        document.getElementsByClassName("draggable")[0].style.color = "black"
         document.getElementsByClassName("answercheck")[0].innerText = "Wrong answer :("
     }
 }, false);
