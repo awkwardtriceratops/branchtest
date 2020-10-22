@@ -1,0 +1,89 @@
+.draggable {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    background: white;
+    margin-bottom: 10px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+body {
+    background-image: url('bg.jpg')
+}
+
+.dropzone {
+    width: 200px;
+    height: 20px;
+    background: blueviolet;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.spawnzone {
+    height: 100px;
+    background: white;
+    margin-bottom: 10px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.one {
+    width: 50%;
+    text-align: center;
+    height: 20px;
+    background: blue;
+    margin-bottom: 30px;
+    padding: 10px;
+    margin: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.two {
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    background: blue;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.three {
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    background: blue;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.answercheck {
+    background: black;
+    width: 50%;
+    padding: 10px;
+    height: 50px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
