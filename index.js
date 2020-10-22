@@ -1,6 +1,6 @@
 var dragged;
-var testList = ["Enforces the laws", "Makes the laws", "Congress", "President", "Reviews laws to decide if they are constitutional", "Supreme Court", "House of Representatives", "Directs military", "9 Justices", "Senate", "Made up of courts", "Approves new laws"]
-var testAnswer = [1, 0, 0, 1, 2, 2, 0, 1, 2, 0, 2, 1]
+var testList = ["Capitol building", "Supreme Court", "Enforces the laws", "Directs military", "Approves new laws", "Congress", "9 Justices", "Reviews laws to decide if they are constitutional", "Makes the laws", "President", "The White House", "The supreme court building", "Made up of courts", "Senate", "House of representitives"]
+var testAnswer = [0, 2, 1, 1, 1, 0, 2, 2, 0, 1, 1, 2, 2, 0, 0]
 var curAnswer = 0;
 /* events fired on the draggable target */
 document.getElementsByClassName("draggable")[0].innerText = testList[curAnswer]
