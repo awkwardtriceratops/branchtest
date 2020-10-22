@@ -49,6 +49,7 @@ document.addEventListener("drop", function(event) {
     var newElement = document.createElement("div")
     newElement.textContent = testList[curAnswer + 1]
     newElement.className = "draggable"
+    newElement.style.color = "black"
     newElement.setAttribute("draggable", true)
         // move dragged elem to the selected drop target
     if (event.target.className == "one" && testAnswer[curAnswer] == 0) {
