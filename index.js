@@ -60,6 +60,10 @@ document.addEventListener("drop", function(event) {
         //event.target.innerText=data
         document.getElementsByClassName("spawnzone")[0].appendChild(newElement)
         document.getElementsByClassName("answercheck")[0].innerText = "Right answer! Keep going :)"
+        if (curAnswer == 14) {
+            document.getElementsByClassName("answercheck")[0].innerText = "ALL DONE! GOOD JOB!"
+            document.getElementsByClassName("answercheck")[0].style.background = "yellow"
+        }
         curAnswer += 1
     } else if (event.target.className == "two" && testAnswer[curAnswer] == 1) {
         event.target.style.background = "";
@@ -72,10 +76,6 @@ document.addEventListener("drop", function(event) {
         //event.target.innerText=data
         document.getElementsByClassName("spawnzone")[0].appendChild(newElement)
         document.getElementsByClassName("answercheck")[0].innerText = "Right answer! Keep going :)"
-        if (curAnswer == 11) {
-            document.getElementsByClassName("answercheck")[0].innerText = "ALL DONE! GOOD JOB!"
-            document.getElementsByClassName("answercheck")[0].style.background = "yellow"
-        }
         curAnswer += 1
     } else if (event.target.className == "three" && testAnswer[curAnswer] == 2) {
         event.target.style.background = "";
