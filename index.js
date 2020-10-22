@@ -97,6 +97,6 @@ document.addEventListener("drop", function(event) {
         event.target.style.background = "";
         event.target.style.color = "white";
         document.getElementsByClassName("draggable")[0].style.color = "black"
-        document.getElementsByClassName("answercheck")[0].innerText = "Wrong answer :("
+        document.getElementsByClassName("answercheck")[0].innerText = "Wrong answer :( Try again!"
     }
 }, false);
