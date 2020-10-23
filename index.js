@@ -66,6 +66,7 @@ document.addEventListener("drop", function(event) {
         if (curAnswer == 14) {
             document.getElementsByClassName("answercheck")[0].innerText = "ALL DONE! Secret message: Tell your teacher your favorite candy."
             document.getElementsByClassName("answercheck")[0].style.background = "yellow"
+            document.getElementsByClassName("answercheck")[0].style.color = "black"
         }
         curAnswer += 1
     } else if (event.target.className == "two" && testAnswer[curAnswer] == 1) {
@@ -76,8 +77,6 @@ document.addEventListener("drop", function(event) {
         //dragged.parentNode.appendChild( textnode );
         document.getElementsByClassName("answercheck")[0].style.background = "green"
         var data = event.dataTransfer.getData("text");
-        //document.getElementById("draggable").innerText=testList[curAnswer]
-        //event.target.innerText=data
         document.getElementsByClassName("spawnzone")[0].appendChild(newElement)
         document.getElementsByClassName("answercheck")[0].innerText = "Right answer! Keep going :)"
         curAnswer += 1
@@ -85,9 +84,6 @@ document.addEventListener("drop", function(event) {
         event.target.style.color = "white";
         event.target.style.background = "";
         dragged.parentNode.removeChild(dragged);
-        //event.target.appendChild( dragged );
-        var textnode = document.createTextNode("Water");
-        //dragged.parentNode.appendChild( textnode );
         document.getElementsByClassName("answercheck")[0].style.background = "green"
         var data = event.dataTransfer.getData("text");
         document.getElementsByClassName("spawnzone")[0].appendChild(newElement)
